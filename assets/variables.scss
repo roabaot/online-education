@@ -1,0 +1,33 @@
+// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
+//
+// The variables you want to modify
+// $font-size-root: 20px;
+
+$body-font-family: "Open Sans", sans-serif !important;
+$card-title-word-break: break-word;
+
+.v-application,
+.v-application .headline,
+.v-application .title,
+.v-application .subtitle,
+.v-application .body-1,
+.v-application .body-2,
+.v-application .text-h1,
+.v-application .text-h2,
+.v-application .text-h3,
+.v-application .text-h4,
+.v-application .text-h5,
+.v-application .text-h6
+{
+  font-family: "Open Sans", sans-serif !important;
+}
+
+.full-width {
+  width: 100%;
+}
+
+@media (min-width: 1904px) {
+  .container {
+      max-width: 1185px;
+  }
+}
