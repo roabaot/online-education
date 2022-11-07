@@ -26,7 +26,7 @@
         </v-col>
         <v-col md="5" cols="12" class="py-0">
           <div class="fill-height feature-img">
-            <img src="/img/feature.jpg" alt="feature" class="feature-img">
+            <img src="https://i.postimg.cc/2jtdvj9R/feature.jpg" alt="feature" class="feature-img">
           </div>
         </v-col>
       </v-row>

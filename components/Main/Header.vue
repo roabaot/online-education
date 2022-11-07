@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-img
-      src="/img/header.jpg"
+      src="https://i.postimg.cc/25cp7BB7/header.jpg"
       position="center center"
       gradient="rgba(40, 120, 235, 0.9), rgba(40, 120, 235, 0.9)"
       class="main-header py-md-16 px-8 py-8 px-sm-4 py-xs-8 px-xs-4"
@@ -72,7 +72,7 @@ export default {
       left: 0;
       z-index: 1;
       bottom: 0;
-      background: url(/img/overlay-bottom.png) bottom center no-repeat;
+      background: url(https://i.postimg.cc/mkP9P0Zc/overlay-bottom.png) bottom center no-repeat;
       background-size: contain;
       transform: translateY(3px);
 

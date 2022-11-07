@@ -3,7 +3,7 @@
     <v-container class="py-12 about-us">
       <v-row class="py-12">
         <v-col md="5" cols="12">
-          <img src="/img/about.jpg" alt="about us" class="about-img">
+          <img src="https://i.postimg.cc/MHcbJk1Z/about.jpg" alt="about us" class="about-img">
         </v-col>
         <v-col md="7" cols="12">
           <h1 class="text-uppercase error--text mb-2 subtitle d-inline-block" :class="$vuetify.breakpoint.mdAndUp ? 'subtitle-1' : 'subtitle-2'">

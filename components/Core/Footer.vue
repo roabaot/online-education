@@ -155,7 +155,7 @@ export default {
       left: 0;
       z-index: 1;
       top: 0;
-      background: url(/img/overlay-top.png) top center no-repeat;
+      background: url(https://i.postimg.cc/RVCj3gf4/overlay-top.png) top center no-repeat;
       background-size: contain;
       transform: translateY(-3px);
 
