@@ -1,13 +1,13 @@
 <template>
   <div class="main">
-    <MainHeader />
-    <MainAboutUs />
-    <MainFeature />
-    <MainCourses />
+    <MainHeader id="home" />
+    <MainAboutUs id="about" />
+    <MainFeature id="feature" />
+    <MainCourses id="courses" />
     <MainCourseForm />
-    <MainInstructors />
-    <MainTestimonial />
-    <MainContact />
+    <MainInstructors id="instructors" />
+    <MainTestimonial id="testimonial" />
+    <MainContact id="contact" />
   </div>
 </template>
 

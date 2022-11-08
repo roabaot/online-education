@@ -70,10 +70,8 @@
             height="87"
             text
             tile
-            nuxt
-            to="/"
             class="subtitle-1 font-weight-bold text-capitalize"
-            active-class="primary--text"
+            @click="scroll('home')"
           >
             Home
           </v-btn>
@@ -81,10 +79,8 @@
             height="87"
             text
             tile
-            nuxt
-            to="/about"
             class="subtitle-1 font-weight-bold text-capitalize"
-            active-class="primary--text"
+            @click="scroll('about')"
           >
             About
           </v-btn>
@@ -92,10 +88,8 @@
             height="87"
             text
             tile
-            nuxt
-            to="/courses"
             class="subtitle-1 font-weight-bold text-capitalize"
-            active-class="primary--text"
+            @click="scroll('courses')"
           >
             Courses
           </v-btn>
@@ -105,8 +99,6 @@
                 height="87"
                 text
                 tile
-                nuxt
-                :to="null"
                 class="subtitle-1 font-weight-bold text-capitalize"
                 active-class="primary--text"
                 v-bind="attrs"
@@ -120,8 +112,7 @@
                 v-for="(item, index) in items"
                 :key="index"
                 dense
-                nuxt
-                :to="item.to"
+                @click.stop=""
                 class="text-capitalize"
                 active-class="primary--text"
               >
@@ -135,10 +126,8 @@
             height="87"
             text
             tile
-            nuxt
-            to="/contact"
             class="subtitle-1 font-weight-bold text-capitalize"
-            active-class="primary--text"
+            @click="scroll('contact')"
           >
             Contact
           </v-btn>
