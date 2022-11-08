@@ -32,8 +32,10 @@
     "nuxt-socket-io": "^2.0.3",
     "read-excel-file": "^5.2.4",
     "socket.io": "^4.5.1",
+    "swiper": "^5.4.5",
     "vee-validate": "^3.4.10",
     "vue-advanced-chat": "^1.4.3",
+    "vue-awesome-swiper": "^4.1.1",
     "vue-chartjs": "^3.5.1",
     "vue-star-rating": "^1.7.0",
     "vuex-persistedstate": "^4.1.0"
