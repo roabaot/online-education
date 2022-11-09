@@ -52,7 +52,7 @@ export default {
         spaceBetween: 0,
         autoplay: {
           delay: 2500,
-          disableOnInteraction: true
+          disableOnInteraction: false
         },
         breakpoints: {
           1024: {
@@ -136,7 +136,7 @@ export default {
   .courses-text {
     position: absolute;
     width: 100%;
-    height: calc(100% + 62px);
+    height: calc(100% + 84px);
     top: 0;
     left: 0;
     right: 0;
@@ -161,7 +161,7 @@ export default {
       margin-top: 0px;
     }
     .courses-text {
-      height: calc(100%0);
+      height: calc(100% - -40px);
     }
   }
 }
