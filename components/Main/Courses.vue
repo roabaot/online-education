@@ -13,26 +13,28 @@
       </v-row>
     </v-container>
     <div>
-      <client-only>
-        <swiper class="swiper" :options="swiperOption">
-          <swiper-slide v-for="course in courses" :key="course.id" class="courses-item">
-            <img :src="course.img">
-            <div class="courses-text white--text">
-              <h4 class="text-center text-white px-4" :class="$vuetify.breakpoint.mdAndUp ? 'text-h5' : 'title'">{{ course.title }}</h4>
-              <div class="courses-footer mt-4">
-                <div class="d-flex justify-content-between pa-6">
-                  <span class="text-white"><i class="fa fa-user mr-2"></i>Jhon Doe</span>
-                  <span class="text-white"><i class="fa fa-star mr-2"></i>4.5 <small>(250)</small></span>
-                </div>
-              </div>
-              <div class="courses-actions white text-center py-6" >
-                <v-btn color="primary">Course Detail</v-btn>
+      <swiper class="swiper" :options="swiperOption" ref="swiper">
+        <swiper-slide
+          v-for="course in courses"
+          :key="course.id"
+          class="courses-item"
+        >
+          <img :src="course.img">
+          <div class="courses-text white--text" @mouseenter="stopSlider" @mouseleave="startSlider">
+            <h4 class="text-center text-white px-4" :class="$vuetify.breakpoint.mdAndUp ? 'text-h5' : 'title'">{{ course.title }}</h4>
+            <div class="courses-footer mt-4">
+              <div class="d-flex justify-content-between pa-6">
+                <span class="text-white"><i class="fa fa-user mr-2"></i>Jhon Doe</span>
+                <span class="text-white"><i class="fa fa-star mr-2"></i>4.5 <small>(250)</small></span>
               </div>
             </div>
-          </swiper-slide>
-          <div class="swiper-pagination" slot="pagination"></div>
-        </swiper>
-      </client-only>
+            <div class="courses-actions white text-center py-6" >
+              <v-btn color="primary">Course Detail</v-btn>
+            </div>
+          </div>
+        </swiper-slide>
+        <div class="swiper-pagination" slot="pagination"></div>
+      </swiper>
     </div>
   </div>
 </template>
@@ -52,7 +54,8 @@ export default {
         spaceBetween: 0,
         autoplay: {
           delay: 2500,
-          disableOnInteraction: false
+          disableOnInteraction: true,
+          pauseOnMouseEnter: true
         },
         breakpoints: {
           1024: {
@@ -106,6 +109,22 @@ export default {
         }
       ]
     }
+  },
+  computed: {
+    swiper () {
+      return this.$refs.swiper.$swiper
+    }
+  },
+  methods: {
+    stopSlider () {
+      this.swiper.autoplay.stop()
+    },
+    startSlider () {
+      this.swiper.autoplay.start()
+    }
+  },
+  mounted () {
+    console.log(this.swiper)
   }
 }
 </script>
